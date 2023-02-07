@@ -1,0 +1,25 @@
+
+
+
+
+th{width: 50px;border: 1px black solid;}
+td{width: 50px;border: 1px black solid;}
+
+.paciente-invalid{background-color: tomato;}
+
+
+.fadeOut{
+    opacity: 0;
+    transition: 0.7s;
+}
+
+
+#filtrar-tabela{
+    width: 200px;
+    height: 35px;
+    margin-bottom: 20px;
+}
+
+.invisivel{
+    display: none;
+}

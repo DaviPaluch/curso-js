@@ -1,0 +1,48 @@
+
+*é um comportamento padrão de um botão dentro de um formulário enviar para outra página...(o botão dentro de um form recarrega a página);
+	para que isso não ocorra deve-se usar a "função event.preventDefault()"
+
+
+------------EVENTOS-JS-----------
+
+variavel.addEventListener() -----> Escuta os eventos do usuário na tela
+variavel.addEventListener("click",funçãoOuSegundo parametro) -----> Escuta eventos do tipo click e chama o segundo parâmetro que é uma função nesse exemplo
+variavel.addEventListener("input",funçãoOuSegundo parametro) -----> escuta os eventos de cada input de dados
+variavel.addEventListener("load",funçãoOuSegundo parametro) -----> 
+
+this.funcaolegal() ------> o this é um representação da variavel que está chamando um determinado evento
+variavel.addEventListener("click",função(){this.remove()}) -----> aqui "this" representa a variável
+
+
+
+function(event){
+	var elemento = event.target ---> target significa alvo; e retorna uma "div" específica.
+	var paiDoElemento = elemento.parentNode ---> "parentNode" seleciona o pai do target
+			} ----> event tem várias funcionalidades importantes que devem ser estudadas, dentre elas:
+
+setTimeout(function(){}) ----> setTimeout é uma função que obriga o JS esperar determinado tempo para realizar alguma ação
+	
+
+var expressao = new RegExp(this.value, "i") ----> RegExp(valor, {diferencia ou letras maiúsculas}) é setado uma expressão regular
+if(!expressao.test(variavel)){} -----> testa se existe um valor identico da var expressao na "variavel"... retorna um boolean
+else{}
+
+
+
+-----------FORMULÁRIO------------
+
+var form = document.querySelector("#umformulario")
+console.log(form.dado)	--------> ex:form.dadosrecebidos (input com o dado)
+console.log(form.dado.value)	--------> ex:form.dadosrecebidos.value (somente o valor recebido)
+
+-----------REQUISICOES---------
+
+
+var xhr = new XMLHttpRequest() //faz requisicoes http ou xml
+    xhr.open("GET", "http://google.com/") //equivalente a abrir uma aba e pesquisar a URL. Requisição
+    xhr.addEventListener("load", function(){
+        console.log(xhr.responseText)
+    }) /* load é um evento que verifica se a resposta já foi carregada*/
+    xhr.send() // Response. 
+
+
